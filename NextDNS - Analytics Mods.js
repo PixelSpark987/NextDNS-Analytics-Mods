@@ -3,7 +3,7 @@
 // @description  Customises NextDNS analytics graph colours, positions the tooltip, and forces the default analytics timeframe to the last 6 hours
 // @author       PixelSpark987 - https://is.gd/PS987
 // @icon         https://my.nextdns.io/favicon.ico
-// @version      3.1
+// @version      2026-10-18
 // @downloadURL  https://raw.githubusercontent.com/PixelSpark987/NextDNS-Analytics-Mods/refs/heads/main/NextDNS%20-%20Analytics%20Mods.js
 // @updateURL    https://raw.githubusercontent.com/PixelSpark987/NextDNS-Analytics-Mods/refs/heads/main/NextDNS%20-%20Analytics%20Mods.js
 // @namespace    http://tampermonkey.net/
@@ -44,17 +44,17 @@
 
         queries.forEach(path => {
             if (path.classList.info ? path.classList.contains('recharts-area-area') : path.classList.contains('recharts-area-area')) {
-                path.style.setProperty('fill', '#646464', 'important');
+                path.style.setProperty('fill', '#3cc0e7', 'important');
             } else {
-                path.style.setProperty('stroke', '#555555', 'important');
+                path.style.setProperty('stroke', '#1482a2', 'important');
             }
         });
 
         blocked.forEach(path => {
             if (path.classList.contains('recharts-area-area')) {
-                path.style.setProperty('fill', '#aa0055', 'important');
+                path.style.setProperty('fill', '#e7633c', 'important');
             } else {
-                path.style.setProperty('stroke', '#550011', 'important');
+                path.style.setProperty('stroke', '#a23414', 'important');
             }
         });
     }
