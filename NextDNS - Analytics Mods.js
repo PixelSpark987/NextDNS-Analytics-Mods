@@ -3,7 +3,7 @@
 // @description  Customises NextDNS analytics graph colours, positions the tooltip, and forces the default analytics timeframe to the last 6 hours
 // @author       PixelSpark987 - https://is.gd/PS987
 // @icon         https://my.nextdns.io/favicon.ico
-// @version      2026-10-18
+// @version      2026-11-11_01
 // @downloadURL  https://raw.githubusercontent.com/PixelSpark987/NextDNS-Analytics-Mods/refs/heads/main/NextDNS%20-%20Analytics%20Mods.js
 // @updateURL    https://raw.githubusercontent.com/PixelSpark987/NextDNS-Analytics-Mods/refs/heads/main/NextDNS%20-%20Analytics%20Mods.js
 // @namespace    http://tampermonkey.net/
@@ -141,7 +141,7 @@
                 const match = transform.match(/translate\(([^p]+)px,\s*([^p]+)px\)/);
                 if (match) {
                     const xCoord = match[1];
-                    tooltip.style.setProperty('transform', `translate(${xCoord}px, 122px)`, 'important');
+                    tooltip.style.setProperty('transform', `translate(${xCoord}px, -120px)`, 'important');
                     tooltip.style.setProperty('z-index', '99999', 'important');
                 }
             }
